@@ -1,0 +1,48 @@
+#Procedimento de instalação 
+
+=== Passos: Instalação JDK ===
+
+Instalação do JDK 1.6 Java:
+
+Java SE Development Kit 
+[http://java.sun.com/javase/downloads/index.jsp]
+
+Após instalação do Java, adicione a variável de ambiente JAVA_HOME ao seu computador.
+Ela deve apontar para: c:\Arquivos de Programas\Java\jdk...<suaversão> conforme imagem abaixo:
+
+[http://zuctonetickets.googlecode.com/files/07.png]
+
+
+=== Passos Instalação JRuby ===
+
+Faça download do JRuby em: www.jruby.org
+
+[http://zuctonetickets.googlecode.com/files/08.png]
+
+Salve-o no C:.
+
+Descompacte-o, gerando uma pasta:
+
+jruby-<versão>.
+
+=== Configurando JRuby ===
+
+Pelo prompt de comando, acesse a pasta:
+
+c:\jruby-<versão>\bin\
+
+Execute os seguintes comandos:
+
+  # jruby -S gem install rails --version "2.3.2" --no-rdoc --no-ri
+
+ [http://zuctonetickets.googlecode.com/files/09.png]
+
+
+  # jruby -S gem install activerecord-jdbcpostgresql-adapter jruby-openssl prawn mongrel --no-rdoc --no-ri                                                      
+
+ [http://zuctonetickets.googlecode.com/files/10.png]  
+
+
+=== Instalando Postgresql ===
+
+Faça o download do Postgresql em: [http://www.enterprisedb.com/products/pgdownload.do#windows]
